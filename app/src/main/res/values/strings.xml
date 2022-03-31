@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ejercicioSQLite</string>
+    <string name="label_id">ID</string>
+    <string name="label_cedula">Cedula</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="label_apellido">Apellido</string>
+    <string name="label_correo">Email</string>
+    <string name="label_telefono">Teléfono/Celular</string>
+    <string name="borrar_campos">Limpiar</string>
+    <string name="agregar">Agregar</string>
+    <string name="eliminar">Eliminarr</string>
+    <string name="editar">Editar</string>
+    <string name="buscar">Buscar</string>
+    <string name="refresacar_lista">Actualizar Lista</string>
+
+</resources>

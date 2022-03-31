@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/amarillo"
+        tools:context=".MainActivity">
+
+
+    <TextView
+            android:text="LISTA DE CLIENTES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4"
+            app:layout_constraintBottom_toTopOf="@+id/listaClinetesVista" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20sp" android:textStyle="bold"
+            android:textColor="@color/design_default_color_background" app:layout_constraintVertical_bias="0.301"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="395dp"
+            android:layout_height="138dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/listaClinetesVista"
+            android:layout_marginTop="80dp"
+    >
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="383dp"
+            android:layout_height="353dp"
+            app:cardElevation="10dp" tools:ignore="MissingConstraints" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/cardView" android:layout_marginBottom="104dp" app:layout_constraintHorizontal_bias="0.428">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="363dp"
+                android:layout_height="match_parent" android:layout_marginStart="10dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp">
+                <TextView
+                        android:text="@string/label_id"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView6" android:padding="15dp"
+                        android:layout_marginTop="5dp" android:textSize="15sp" android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="210dp"
+                        android:layout_height="40dp" app:cardCornerRadius="20dp" app:cardMaxElevation="20dp"
+                        android:layout_marginTop="10dp" android:layout_marginStart="10dp">
+                    <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="40dp"
+                            android:inputType="text|number"
+                            android:ems="10"
+                            android:id="@+id/txt_idCliente"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                            android:layout_marginStart="10dp" android:background="@null" android:textSize="14sp"
+                    />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/label_cedula"
+                        android:layout_width="107dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView7" android:padding="15dp"
+                        android:layout_marginTop="5dp" android:textSize="15sp" android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="210dp"
+                        android:layout_height="40dp" app:cardCornerRadius="20dp" app:cardElevation="2dp"
+                        android:layout_marginTop="10dp" android:layout_marginStart="10dp">
+                    <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="40dp"
+                            android:inputType="text|number"
+                            android:ems="10"
+                            android:id="@+id/txt_cedulaCliente"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                            android:layout_marginStart="10dp" android:background="@null" android:textSize="14sp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/label_nombre"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView8" android:padding="15dp"
+                        android:layout_marginTop="5dp" android:textSize="15sp" android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="210dp"
+                        android:layout_height="40dp" app:cardCornerRadius="20dp" app:cardElevation="2dp"
+                        android:layout_marginTop="10dp" android:layout_marginStart="10dp">
+                    <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/txt_nombreCliente"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                            android:layout_marginStart="10dp" android:background="@null" android:textSize="14sp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/label_apellido"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView9" android:padding="15dp"
+                        android:layout_marginTop="5dp" android:textSize="15sp" android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="210dp"
+                        android:layout_height="40dp" app:cardCornerRadius="20dp" app:cardElevation="2dp"
+                        android:layout_marginTop="10dp" android:layout_marginStart="10dp">
+                    <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/txt_apellidoCliente"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                            android:layout_marginStart="10dp" android:background="@null" android:textSize="14sp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/label_correo"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView10" android:padding="15dp"
+                        android:layout_marginTop="5dp" android:textSize="15sp" android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="210dp"
+                        android:layout_height="40dp" app:cardCornerRadius="20dp" app:cardElevation="2dp"
+                        android:layout_marginTop="10dp" android:layout_marginStart="10dp">
+                    <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="40dp"
+                            android:inputType="textEmailAddress"
+                            android:ems="10"
+                            android:id="@+id/txt_emailCliente"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                            android:layout_marginStart="10dp" android:background="@null" android:textSize="14sp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="@string/label_telefono"
+                        android:layout_width="106dp"
+                        android:layout_height="76dp" android:id="@+id/textView11" android:padding="15dp"
+                        android:layout_marginTop="5dp" android:textSize="15sp" android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                        android:layout_width="210dp"
+                        android:layout_height="40dp" app:cardCornerRadius="20dp" app:cardElevation="2dp"
+                        android:layout_marginTop="15dp" android:layout_marginStart="10dp">
+                    <EditText
+                            android:layout_width="190dp"
+                            android:layout_height="40dp"
+                            android:inputType="text|number"
+                            android:ems="10"
+                            android:id="@+id/txt_telefonoCliente"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                            android:layout_marginStart="10dp" android:background="@null" android:textSize="14sp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+            android:text="REGISTRAR CLIENTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/listaClinetesVista" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textStyle="bold" android:textSize="34sp"
+            app:layout_constraintVertical_bias="0.735" android:textColor="@color/white"/>
+    <ImageView
+            android:layout_width="42dp"
+            android:layout_height="32dp" app:srcCompat="@drawable/icon_refresh" android:id="@+id/btn_refrescar"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/listaClinetesVista"
+            app:layout_constraintEnd_toStartOf="@+id/textView4" app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintVertical_bias="0.895"/>
+    <androidx.cardview.widget.CardView
+            android:layout_width="412dp"
+            android:layout_height="67dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.966"
+            app:cardBackgroundColor="@color/amarillo_claro" app:cardElevation="100dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" android:layout_marginStart="360dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" app:srcCompat="@drawable/icon_limpiar"
+                    android:id="@+id/btn_limpiarCampos"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="3dp"/>
+            <TextView
+                    android:text="@string/borrar_campos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_marginTop="4dp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" android:layout_marginStart="10dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/icon_buscar"
+                    android:id="@+id/btn_buscar"
+                    android:layout_marginTop="5dp"/>
+            <TextView
+                    android:text="@string/buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:textAlignment="center"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="55dp"
+                android:layout_height="match_parent" android:layout_marginStart="100dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/icon_add"
+                    android:id="@+id/btn_registrar"
+                    android:layout_marginBottom="16dp" android:layout_marginTop="5dp"
+                    android:layout_marginStart="3dp"/>
+            <TextView
+                    android:text="@string/agregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView12" android:layout_marginTop="-17dp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="49dp"
+                android:layout_height="match_parent" android:layout_marginStart="190dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/icon_registration"
+                    android:id="@+id/btn_editar"
+                    android:layout_marginTop="5dp" android:layout_marginStart="3dp"/>
+            <TextView
+                    android:text="@string/editar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView13" android:textAlignment="center"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="53dp"
+                android:layout_height="match_parent" android:layout_marginStart="280dp">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/icon_delete"
+                    android:id="@+id/btn_eliminar"
+                    android:layout_marginTop="5dp" android:layout_marginStart="3dp"/>
+            <TextView
+                    android:text="@string/eliminar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView14" android:textStyle="bold"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+            android:text="@string/refresacar_lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView15"
+            app:layout_constraintStart_toEndOf="@+id/btn_refrescar" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="50dp" android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
