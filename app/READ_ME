@@ -1,0 +1,1 @@
+EL APK SE A GENERADO DENTRO DEL DIRECCTORIO ejercicioSQLite\app\release
